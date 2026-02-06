@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>À propos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+        }
+        nav {
+            background: #2c3e50;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px);
+        }
+        .box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>À propos</h1>
-    <p>Pour tout demande de service marketing ou autres...</p>
-    <a href="index.html">Retour à l’accueil</a>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="box">
+        <h1>À propos</h1>
+        <p>Ce site a été créé pour apprendre à créer des sites web modernes.</p>
+    </div>
+</div>
+
 </body>
 </html>
