@@ -7,11 +7,27 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f6f8;
+            margin: 0;
+        }
+        nav {
+            background: #2c3e50;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            height: calc(100vh - 60px);
         }
         .box {
             background: white;
@@ -20,19 +36,22 @@
             text-align: center;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #2c3e50;
-        }
-        p {
-            color: #555;
-        }
     </style>
 </head>
 <body>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
     <div class="box">
         <h1>Bienvenue sur mon site</h1>
         <p>Mon premier site web est maintenant en ligne 🚀</p>
     </div>
+</div>
+
 </body>
 </html>
-
